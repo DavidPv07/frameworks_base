@@ -91,6 +91,13 @@ public class GamesPropsUtils {
                 "jp.konami.pesam"
         });
 
+                   propsToChange.put("ROG", createROGProps());
+        packagesToChange.put("ROG", new String[]{
+              "com.dts.freefireth",
+              "com.dts.freefirethmax"
+
+                 });
+
         propsToChange.put("ROG3", createROG3Props());
         packagesToChange.put("ROG3", new String[]{
                 "com.ea.gp.fifamobile",
@@ -198,6 +205,15 @@ public class GamesPropsUtils {
         props.put("DEVICE", "OnePlus9Pro");
         props.put("MANUFACTURER", "OnePlus");
         props.put("MODEL", "LE2101");
+        return props;
+    }
+
+
+        private static Map<String, Object> createROGProps() {
+        Map<String, Object> props = new HashMap<>();
+props.put("BRAND", "asus");
+        props.put("MANUFACTURER", "asus");
+        props.put("MODEL", "ASUS_Z01QD");
         return props;
     }
 
