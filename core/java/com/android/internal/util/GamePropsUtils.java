@@ -43,8 +43,6 @@ public class GamesPropsUtils {
 
                 propsToChange.put("F5", createF5Props());
         packagesToChange.put("F5", new String[]{
-                "com.dts.freefiremax",
-                "com.dts.freefireth",
                 "com.mobile.legends"
         });
 
